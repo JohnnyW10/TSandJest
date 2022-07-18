@@ -1,26 +1,37 @@
-let num: number = 12;
 
-function first(a: number): void {
-  console.log(a);
-}
-
-first(num);
-
-let jan = {
-  firstName: "Jan",
-  surname: "Wolan",
-}
 
 interface Person {
-  firstName: String,
+  name: String,
   surname: String,
+  mail?: String,
+  login: String,
+  password: String,
+  age?: number,
+  adres?: String,
+  houseNumber?: number
 }
 
-function viewPersonInformation(person: Person): string {
-  let per = `${person.firstName} - ${person.surname}`
-  console.log(per)
-  return per
+function addSomePerson(person: Person): void {
+  let arr: Person[] = [];
+  arr.push(person)
+  console.log(arr)
 }
 
-viewPersonInformation(jan)
 
+  let jan:Person = {
+    name: "Jan",
+    surname: "Wolan",
+    login: "jayjayW",
+    password: "jayW.com",
+    age: 22,
+  }
+  let another: Person= {
+    name: "Jaco",
+    surname: "Krochmalson",
+    login: "ebeb",
+    password: "jaYup",
+    age: 46,
+  }
+
+  
+  addSomePerson(another)

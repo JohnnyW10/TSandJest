@@ -1,15 +1,20 @@
-var num = 12;
-function first(a) {
-    console.log(a);
+function addSomePerson(person) {
+    var arr = [];
+    arr.push(person);
+    console.log(arr);
 }
-first(num);
 var jan = {
-    firstName: "Jan",
-    surname: "Wolan"
+    name: "Jan",
+    surname: "Wolan",
+    login: "jayjayW",
+    password: "jayW.com",
+    age: 22
 };
-function viewPersonInformation(person) {
-    var per = "".concat(person.firstName, " - ").concat(person.surname);
-    console.log(per);
-    return per;
-}
-viewPersonInformation(jan);
+var another = {
+    name: "Jaco",
+    surname: "Krochmalson",
+    login: "ebeb",
+    password: "jaYup",
+    age: 46
+};
+addSomePerson(another);
